@@ -78,8 +78,8 @@ module.exports.signUp = (req, res) => {
         if (error) throw error;
         const verifyCode = generateCode(phoneNumber);
         connection.query(
-          "INSERT INTO verify (phone_number, code) VALUES (?, ?)",
-          [phoneNumber, verifyCode],
+          "INSERT INTO verify (phone_number, code, time_get_code) VALUES (?, ?, ?)",
+          [phoneNumber, verifyCode, new Date()],
           function (error, results, fields) {
             if (error) throw error;
           }

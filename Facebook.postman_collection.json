@@ -14,7 +14,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/authentication/get_verify_code?phoneNumber=0942188750",
+							"raw": "http://localhost:3000/authentication/get_verify_code?phoneNumber=0936664206",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -27,7 +27,7 @@
 							"query": [
 								{
 									"key": "phoneNumber",
-									"value": "0942188750"
+									"value": "0936664206"
 								}
 							]
 						}
@@ -40,7 +40,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/authentication/signUp?phoneNumber=0819841137&password=123456&uuid=hehe",
+							"raw": "http://localhost:3000/authentication/signUp?phoneNumber=0936664210&password=123456&uuid=hehe",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -53,7 +53,7 @@
 							"query": [
 								{
 									"key": "phoneNumber",
-									"value": "0819841137"
+									"value": "0936664210"
 								},
 								{
 									"key": "password",
@@ -74,7 +74,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/authentication/login?phoneNumber=0942188750&password=123456&deviceID=android1",
+							"raw": "http://localhost:3000/authentication/login?phoneNumber=0936664201&password=123456&deviceID=android2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -87,7 +87,7 @@
 							"query": [
 								{
 									"key": "phoneNumber",
-									"value": "0942188750"
+									"value": "0936664201"
 								},
 								{
 									"key": "password",
@@ -95,7 +95,7 @@
 								},
 								{
 									"key": "deviceID",
-									"value": "android1"
+									"value": "android2"
 								}
 							]
 						}
@@ -108,7 +108,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/authentication/check_verify_code?phoneNumber=0942188750&code=GYR4W4",
+							"raw": "http://localhost:3000/authentication/check_verify_code?phoneNumber=0936664206&code=148384",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -121,11 +121,11 @@
 							"query": [
 								{
 									"key": "phoneNumber",
-									"value": "0942188750"
+									"value": "0936664206"
 								},
 								{
 									"key": "code",
-									"value": "GYR4W4"
+									"value": "148384"
 								}
 							]
 						}
@@ -139,7 +139,7 @@
 						"header": [
 							{
 								"key": "token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzQsImRldmljZUlEIjoiYW5kcm9pZDEiLCJpYXQiOjE2NzQ0OTQwMzIsImV4cCI6MTY3NDU4MDQzMn0.RBscjvvI1laFgwQIl4EDxc8ajHQmH0ZETlMMp9vG7P0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NDYsImRldmljZUlEIjoiYW5kcm9pZDEiLCJpYXQiOjE2NzQ5ODM3NDUsImV4cCI6MTY3NTA3MDE0NX0.fjWW1-xgzD_sIe8Z9FKCm-5FovQXOxBbBCSH8TbkgXE",
 								"type": "text"
 							}
 						],
@@ -175,7 +175,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/user/change_info_after_signup?username=linhken&avatar=https://hehe.com/hihi.png",
+							"raw": "http://localhost:3000/user/change_info_after_signup?username=trienchieu&avatar=https://hehe.com/hihi.png",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -188,7 +188,7 @@
 							"query": [
 								{
 									"key": "username",
-									"value": "linhken"
+									"value": "trienchieu"
 								},
 								{
 									"key": "avatar",
@@ -247,7 +247,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/user/set_block?user_id=46&type=1",
+							"raw": "http://localhost:3000/user/set_block?user_id=55&type=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -260,7 +260,7 @@
 							"query": [
 								{
 									"key": "user_id",
-									"value": "46"
+									"value": "55"
 								},
 								{
 									"key": "type",
@@ -283,7 +283,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/user/change_password?password=123456&new_password=12345",
+							"raw": "http://localhost:3000/user/change_password?password=123456&new_password=1234567",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -300,7 +300,7 @@
 								},
 								{
 									"key": "new_password",
-									"value": "12345"
+									"value": "1234567"
 								}
 							]
 						}
@@ -319,7 +319,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/user/get_user_info?user_id=48",
+							"raw": "http://localhost:3000/user/get_user_info?user_id=49",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -332,7 +332,7 @@
 							"query": [
 								{
 									"key": "user_id",
-									"value": "48"
+									"value": "49"
 								}
 							]
 						}
@@ -351,7 +351,7 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:3000/user/set_user_info",
+							"raw": "http://localhost:3000/user/set_user_info?username=linhkeoo&description=goodboizz&avatar=hotboy.png&address=173 Linh Nam, Ha Noi&city=Ha Noi&cover_image=hihi.png&link=https://www.tiktok.com/@morgan23l",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -360,6 +360,41 @@
 							"path": [
 								"user",
 								"set_user_info"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "linhkeoo"
+								},
+								{
+									"key": "description",
+									"value": "goodboizz"
+								},
+								{
+									"key": "avatar",
+									"value": "hotboy.png"
+								},
+								{
+									"key": "address",
+									"value": "173 Linh Nam, Ha Noi"
+								},
+								{
+									"key": "city",
+									"value": "Ha Noi"
+								},
+								{
+									"key": "country",
+									"value": "Lào",
+									"disabled": true
+								},
+								{
+									"key": "cover_image",
+									"value": "hihi.png"
+								},
+								{
+									"key": "link",
+									"value": "https://www.tiktok.com/@morgan23l"
+								}
 							]
 						}
 					},
@@ -411,7 +446,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/post/check_new_item?last_id=51",
+							"raw": "http://localhost:3000/post/check_new_item?last_id=",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -424,7 +459,7 @@
 							"query": [
 								{
 									"key": "last_id",
-									"value": "51"
+									"value": ""
 								}
 							]
 						}
@@ -437,7 +472,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/post/get_post/50",
+							"raw": "http://localhost:3000/post/get_post/54",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -446,7 +481,7 @@
 							"path": [
 								"post",
 								"get_post",
-								"50"
+								"54"
 							]
 						}
 					},
@@ -458,7 +493,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/post/edit_post?id=50&described=hihi&status=huhu&image[0]=https://new1.png&image[1]=https://new2.png&image_del[0]=349&image_sort[0]=1&image_sort[1]=3",
+							"raw": "http://localhost:3000/post/edit_post?id=53&described=hihi&status=huhu&image[0]=https://1.png&image[1]=https://2.png&image_sort[1]=3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -471,7 +506,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "50"
+									"value": "53"
 								},
 								{
 									"key": "described",
@@ -493,11 +528,11 @@
 								},
 								{
 									"key": "image[0]",
-									"value": "https://new1.png"
+									"value": "https://1.png"
 								},
 								{
 									"key": "image[1]",
-									"value": "https://new2.png"
+									"value": "https://2.png"
 								},
 								{
 									"key": "image[2]",
@@ -506,16 +541,18 @@
 								},
 								{
 									"key": "image_del[0]",
-									"value": "349"
+									"value": "371",
+									"disabled": true
 								},
 								{
 									"key": "image_del[1]",
-									"value": null,
+									"value": "1",
 									"disabled": true
 								},
 								{
 									"key": "image_sort[0]",
-									"value": "1"
+									"value": "0",
+									"disabled": true
 								},
 								{
 									"key": "image_sort[1]",
@@ -532,7 +569,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/post/delete_post?id=43",
+							"raw": "http://localhost:3000/post/delete_post?id=20",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -545,7 +582,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "43"
+									"value": "20"
 								}
 							]
 						}
@@ -608,7 +645,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/post/get_list_videos?in_campaign=0&campaign_id=23&latitude=123&longitude=321&last_id=0&index=0&count=100",
+							"raw": "http://localhost:3000/post/get_list_videos?in_campaign=0&campaign_id=23&latitude=123&longitude=321&last_id=0&index=52&count=20",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -641,11 +678,11 @@
 								},
 								{
 									"key": "index",
-									"value": "0"
+									"value": "52"
 								},
 								{
 									"key": "count",
-									"value": "100"
+									"value": "20"
 								}
 							]
 						}
@@ -658,7 +695,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/post/add_post?image[0]=https://haha.png&image[1]=https://haha.png&image[2]=https://haha.png&described=hehehe&status=haha",
+							"raw": "http://localhost:3000/post/add_post?video=hehe&described=Nhà sửa chữa&status=haha&thumb=hihi",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -671,28 +708,34 @@
 							"query": [
 								{
 									"key": "image[0]",
-									"value": "https://haha.png"
-								},
-								{
-									"key": "image[1]",
-									"value": "https://haha.png"
-								},
-								{
-									"key": "image[2]",
-									"value": "https://haha.png"
-								},
-								{
-									"key": "video",
-									"value": "hehe",
+									"value": "https://haha.png",
 									"disabled": true
 								},
 								{
+									"key": "image[1]",
+									"value": "https://haha.png",
+									"disabled": true
+								},
+								{
+									"key": "image[2]",
+									"value": "https://haha.png",
+									"disabled": true
+								},
+								{
+									"key": "video",
+									"value": "hehe"
+								},
+								{
 									"key": "described",
-									"value": "hehehe"
+									"value": "Nhà sửa chữa"
 								},
 								{
 									"key": "status",
 									"value": "haha"
+								},
+								{
+									"key": "thumb",
+									"value": "hihi"
 								}
 							]
 						}
@@ -745,7 +788,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/report/report_post?id=50&subject=hình ảnh không hợp lệ&details=ăn thịt chó",
+							"raw": "http://localhost:3000/report/report_post?id=54&subject=hình ảnh không hợp lệ&details=ăn thịt chó",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -758,7 +801,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "50"
+									"value": "54"
 								},
 								{
 									"key": "subject",
@@ -819,7 +862,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/like?id=49",
+							"raw": "http://localhost:3000/like?id=54",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -831,7 +874,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "49"
+									"value": "54"
 								}
 							]
 						}
@@ -884,7 +927,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/comment/get_comment?id=49&index=0&count=10",
+							"raw": "http://localhost:3000/comment/get_comment?id=54&index=0&count=10",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -897,7 +940,7 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "49"
+									"value": "54"
 								},
 								{
 									"key": "index",
@@ -918,7 +961,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/comment/set_comment",
+							"raw": "http://localhost:3000/comment/set_comment?id=54&comment=ahihi111&index=0&count=10",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -927,6 +970,24 @@
 							"path": [
 								"comment",
 								"set_comment"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "54"
+								},
+								{
+									"key": "comment",
+									"value": "ahihi111"
+								},
+								{
+									"key": "index",
+									"value": "0"
+								},
+								{
+									"key": "count",
+									"value": "10"
+								}
 							]
 						}
 					},
@@ -978,7 +1039,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/search?keyword=sửa chữa nhà&index=0&count=100",
+							"raw": "http://localhost:3000/search?keyword=Bủh bủh lmao&index=51&count=20",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -990,15 +1051,15 @@
 							"query": [
 								{
 									"key": "keyword",
-									"value": "sửa chữa nhà"
+									"value": "Bủh bủh lmao"
 								},
 								{
 									"key": "index",
-									"value": "0"
+									"value": "51"
 								},
 								{
 									"key": "count",
-									"value": "100"
+									"value": "20"
 								}
 							]
 						}
@@ -1041,7 +1102,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/search/del_saved_search?search_id=3&all=1",
+							"raw": "http://localhost:3000/search/del_saved_search?all=0",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1054,11 +1115,12 @@
 							"query": [
 								{
 									"key": "search_id",
-									"value": "3"
+									"value": "23",
+									"disabled": true
 								},
 								{
 									"key": "all",
-									"value": "1"
+									"value": "0"
 								}
 							]
 						}
@@ -1141,7 +1203,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/friend/get_user_friends?index=0&count=100&user_id=50",
+							"raw": "http://localhost:3000/friend/get_user_friends?index=0&count=100&user_id=47",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1162,7 +1224,7 @@
 								},
 								{
 									"key": "user_id",
-									"value": "50"
+									"value": "47"
 								}
 							]
 						}
@@ -1175,7 +1237,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/friend/set_accept_friend?user_id=0&count=100&user_id=50",
+							"raw": "http://localhost:3000/friend/set_accept_friend?user_id=51&is_accept=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1188,15 +1250,11 @@
 							"query": [
 								{
 									"key": "user_id",
-									"value": "0"
+									"value": "51"
 								},
 								{
-									"key": "count",
-									"value": "100"
-								},
-								{
-									"key": "user_id",
-									"value": "50"
+									"key": "is_accept",
+									"value": "1"
 								}
 							]
 						}
@@ -1239,7 +1297,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/friend/get_lisset_suggested_friends?index=0&count=100",
+							"raw": "http://localhost:3000/friend/set_request_friend?user_id=54",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1247,16 +1305,12 @@
 							"port": "3000",
 							"path": [
 								"friend",
-								"get_lisset_suggested_friends"
+								"set_request_friend"
 							],
 							"query": [
 								{
-									"key": "index",
-									"value": "0"
-								},
-								{
-									"key": "count",
-									"value": "100"
+									"key": "user_id",
+									"value": "54"
 								}
 							]
 						}
@@ -1329,7 +1383,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/setting/set_push_settings",
+							"raw": "http://localhost:3000/setting/set_push_settings?like_comment=0&from_friends=0&requested_friend=0&suggested_friend=1&birthday=1&video=1&report=1&sound_on=1&notification_on=1&vibrant_on=1&led_on=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1338,6 +1392,52 @@
 							"path": [
 								"setting",
 								"set_push_settings"
+							],
+							"query": [
+								{
+									"key": "like_comment",
+									"value": "0"
+								},
+								{
+									"key": "from_friends",
+									"value": "0"
+								},
+								{
+									"key": "requested_friend",
+									"value": "0"
+								},
+								{
+									"key": "suggested_friend",
+									"value": "1"
+								},
+								{
+									"key": "birthday",
+									"value": "1"
+								},
+								{
+									"key": "video",
+									"value": "1"
+								},
+								{
+									"key": "report",
+									"value": "1"
+								},
+								{
+									"key": "sound_on",
+									"value": "1"
+								},
+								{
+									"key": "notification_on",
+									"value": "1"
+								},
+								{
+									"key": "vibrant_on",
+									"value": "1"
+								},
+								{
+									"key": "led_on",
+									"value": "1"
+								}
 							]
 						}
 					},
@@ -1375,7 +1475,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/setting/check_new_version?last_update",
+							"raw": "http://localhost:3000/setting/set_devtoken?devtype=1&devtoken=AB235G",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1383,12 +1483,16 @@
 							"port": "3000",
 							"path": [
 								"setting",
-								"check_new_version"
+								"set_devtoken"
 							],
 							"query": [
 								{
-									"key": "last_update",
-									"value": null
+									"key": "devtype",
+									"value": "1"
+								},
+								{
+									"key": "devtoken",
+									"value": "AB235G"
 								}
 							]
 						}
@@ -1471,7 +1575,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/notification/get_notification?index=0&count=100",
+							"raw": "http://localhost:3000/notification/set_read_notification?notification_id=2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1479,16 +1583,12 @@
 							"port": "3000",
 							"path": [
 								"notification",
-								"get_notification"
+								"set_read_notification"
 							],
 							"query": [
 								{
-									"key": "index",
-									"value": "0"
-								},
-								{
-									"key": "count",
-									"value": "100"
+									"key": "notification_id",
+									"value": "2"
 								}
 							]
 						}
@@ -1541,7 +1641,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/conversation/get_list_conversation?index=0&count=100",
+							"raw": "http://localhost:3000/conversation/get_list_conversation?index=&count=100",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1554,7 +1654,7 @@
 							"query": [
 								{
 									"key": "index",
-									"value": "0"
+									"value": ""
 								},
 								{
 									"key": "count",
@@ -1571,7 +1671,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/conversation/get_list_conversation?index=0&count=100",
+							"raw": "http://localhost:3000/conversation/get_conversation?index=7&count=4&partner_id=48&conversation_id=3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1579,16 +1679,24 @@
 							"port": "3000",
 							"path": [
 								"conversation",
-								"get_list_conversation"
+								"get_conversation"
 							],
 							"query": [
 								{
 									"key": "index",
-									"value": "0"
+									"value": "7"
 								},
 								{
 									"key": "count",
-									"value": "100"
+									"value": "4"
+								},
+								{
+									"key": "partner_id",
+									"value": "48"
+								},
+								{
+									"key": "conversation_id",
+									"value": "3"
 								}
 							]
 						}
@@ -1601,7 +1709,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/conversation/set_read_message?partner_id=48&conversation_id=3",
+							"raw": "http://localhost:3000/conversation/set_read_message?partner_id=51&conversation_id=1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1614,11 +1722,11 @@
 							"query": [
 								{
 									"key": "partner_id",
-									"value": "48"
+									"value": "51"
 								},
 								{
 									"key": "conversation_id",
-									"value": "3"
+									"value": "1"
 								}
 							]
 						}
@@ -1631,7 +1739,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/conversation/set_read_message?partner_id=48&conversation_id=3",
+							"raw": "http://localhost:3000/conversation/delete_message?message_id=13&conversation_id=1&partner_id=51",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1639,16 +1747,20 @@
 							"port": "3000",
 							"path": [
 								"conversation",
-								"set_read_message"
+								"delete_message"
 							],
 							"query": [
 								{
-									"key": "partner_id",
-									"value": "48"
+									"key": "message_id",
+									"value": "13"
 								},
 								{
 									"key": "conversation_id",
-									"value": "3"
+									"value": "1"
+								},
+								{
+									"key": "partner_id",
+									"value": "51"
 								}
 							]
 						}
@@ -1661,7 +1773,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/conversation/set_read_message?partner_id=48&conversation_id=3",
+							"raw": "http://localhost:3000/conversation/delete_conversation?partner_id=47&conversation_id=3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1669,12 +1781,12 @@
 							"port": "3000",
 							"path": [
 								"conversation",
-								"set_read_message"
+								"delete_conversation"
 							],
 							"query": [
 								{
 									"key": "partner_id",
-									"value": "48"
+									"value": "47"
 								},
 								{
 									"key": "conversation_id",

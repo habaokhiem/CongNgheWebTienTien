@@ -513,34 +513,42 @@ module.exports.set_user_info = async (req, res) => {
       return;
     }
   }
-  if (
-    country.toLowerCase().includes("triều tiên") ||
-    country.toLowerCase().includes("north korea") ||
-    country.toLowerCase().includes("northkorea") ||
-    country.toLowerCase().includes("trieu tien")
-  ) {
-    res.send({
-      code: 1003,
-      message: "Tham số country không hợp lệ, cần đăng xuất",
-      data: [],
-    });
-    return;
+  if (!!country) {
+    if (
+      country.toLowerCase().includes("triều tiên") ||
+      country.toLowerCase().includes("north korea") ||
+      country.toLowerCase().includes("northkorea") ||
+      country.toLowerCase().includes("trieu tien")
+    ) {
+      res.send({
+        code: 1003,
+        message: "Tham số country không hợp lệ, cần đăng xuất",
+        data: [],
+      });
+      return;
+    }
   }
-  if (description.length > 150) {
-    res.send({
-      code: 1003,
-      message: "Tham số description quá dài",
-      data: [],
-    });
-    return;
+
+  if (!!description) {
+    if (description.length > 150) {
+      res.send({
+        code: 1003,
+        message: "Tham số description quá dài",
+        data: [],
+      });
+      return;
+    }
   }
-  if (link.includes("vnhackers.com")) {
-    res.send({
-      code: 1003,
-      message: "Đường dẫn không hợp lệ",
-      data: [],
-    });
-    return;
+
+  if (!!link) {
+    if (link.includes("vnhackers.com")) {
+      res.send({
+        code: 1003,
+        message: "Đường dẫn không hợp lệ",
+        data: [],
+      });
+      return;
+    }
   }
   let queryUpdate = "UPDATE user SET ";
   let queryUpdateValue = [];

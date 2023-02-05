@@ -13,8 +13,8 @@ router.post("/get_comment", verifyToken, get_comment);
 
 router.post("/set_comment", verifyToken, set_comment);
 
-router.post("/edit-comment", verifyToken, edit_comment);
+// router.post("/edit-comment", verifyToken, edit_comment);
 
-router.post("/delete-comment", verifyToken, delete_comment);
+// router.post("/delete-comment", verifyToken, delete_comment);
 
 module.exports = router;

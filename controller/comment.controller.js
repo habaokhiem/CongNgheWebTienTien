@@ -123,10 +123,10 @@ module.exports.set_comment = async (req, res) => {
   );
   let listCommentResult = listComment.slice(index, +index + +count);
   let listBlock = await query(
-    "SELECT * from block WHERE id_user_blocked = ? OR id_user= ?",
-    [id_user, id_user]
+    "SELECT * from block WHERE id_user_blocked = ? AND id_user= ?",
+    [id_user, post.id_user]
   );
-  let is_blocked = listBlock[0].length === 0 ? false : true;
+  let is_blocked = listBlock.length === 0 ? false : true;
   let is_banned = post.banned;
   if (is_banned === 1) {
     res.send({
@@ -164,39 +164,39 @@ module.exports.set_comment = async (req, res) => {
   });
   res.send({
     code: 1000,
-    message: "Danh sách comment của bài viết",
-    data: dataResponse,
+    message: "Bài viết mới nhất",
+    data: dataResponse[dataResponse.length - 1],
   });
 };
-module.exports.edit_comment = (req, res) => {
-  const { id, comment, image, state, is_blocked } = req.query;
-  console.log("req.query: ", req.query);
-  connection.query(
-    "UPDATE comment SET comment = ?, image = ?, state = ?, is_blocked = ? WHERE id = ?",
-    [comment, image, state, is_blocked, id],
-    function (error, results, fields) {
-      if (error) throw error;
-      res.send({
-        status: 1000,
-        message: "Sửa comment thành công!",
-        results: [],
-      });
-    }
-  );
-};
-module.exports.delete_comment = (req, res) => {
-  const { id } = req.query;
-  connection.query(
-    "DELETE from comment WHERE id = ?",
-    [id],
-    function (error, results, fields) {
-      console.log("results: ", results);
-      if (error) throw error;
-      res.send({
-        status: 1000,
-        message: "Xoá thành công!",
-        results: [],
-      });
-    }
-  );
-};
+// module.exports.edit_comment = (req, res) => {
+//   const { id, comment, image, state, is_blocked } = req.query;
+//   console.log("req.query: ", req.query);
+//   connection.query(
+//     "UPDATE comment SET comment = ?, image = ?, state = ?, is_blocked = ? WHERE id = ?",
+//     [comment, image, state, is_blocked, id],
+//     function (error, results, fields) {
+//       if (error) throw error;
+//       res.send({
+//         status: 1000,
+//         message: "Sửa comment thành công!",
+//         results: [],
+//       });
+//     }
+//   );
+// };
+// module.exports.delete_comment = (req, res) => {
+//   const { id } = req.query;
+//   connection.query(
+//     "DELETE from comment WHERE id = ?",
+//     [id],
+//     function (error, results, fields) {
+//       console.log("results: ", results);
+//       if (error) throw error;
+//       res.send({
+//         status: 1000,
+//         message: "Xoá thành công!",
+//         results: [],
+//       });
+//     }
+//   );
+// };
